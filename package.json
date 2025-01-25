@@ -7,9 +7,13 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node --experimental-modules dist/index.js"
   },
   "devDependencies": {
     "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@types/node-telegram-bot-api": "^0.64.7"
   }
 }
